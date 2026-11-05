@@ -33,7 +33,7 @@ Feature 2
 The window cleaner charges: £5 per property + £1 per window
 Calculate the total cost for a specified booking number.
 */
-const targetBookingNumber = 2;
+const targetBookingNumber = 5;
 
 // Step 1: Find customer with target booking Number
 const targetCustomer =

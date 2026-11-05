@@ -1,6 +1,21 @@
 # dvla-assessment
 
-482671 – SEO Senior Software Development Engineer in Test
+Overview
+
+This repository contains my solution to the DVLA Senior Software Development Engineer in Test coding assessment.
+
+Progamming Language
+
+Node.js
+
+Running the application
+
+Clone the repository and run:
+
+npm install
+npm start
+
+'node windowCleaning.js' in terminal will run the code
 
 Coding Exercise – Part 1 (GD&D Programming & Build - practitioner)
 
@@ -50,10 +65,12 @@ The window cleaner charges: £5 per property + £1 per window
 
 Calculate the total cost for a specified booking number.
 
-Submission
+### Adding, Removing and Updating Data
 
-You must submit your solution by 12th November 2026, before 1pm.
-
-Please provide a link to a public source code repository such as GitHub to ITSRecruitment@dvla.gov.uk
-
-On the day of your code assessment for part 2, you will be asked to share your screen to complete the task. Please ensure this code is available.
+| Action             | JavaScript Method                             | Example                      |
+| ------------------ | --------------------------------------------- | ---------------------------- |
+| Add                | `push()`                                      | `customers.push(customer)`   |
+| Remove last item   | `pop()`                                       | `customers.pop()`            |
+| Remove by position | `splice()`                                    | `customers.splice(index, 1)` |
+| Update             | Find item, then assign new value              | `customer.name = "Smith"`    |
+| Delete             | `delete` keyword (not recommended for arrays) | `delete customers[0]`        |

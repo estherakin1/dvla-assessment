@@ -14,7 +14,7 @@ Running the application
 
 npm install
 
-## Run the code
+## How to run
 
 node windowCleaning.js
 

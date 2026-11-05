@@ -1,6 +1,6 @@
 # dvla-assessment
 
-Overview
+# Overview
 
 This repository contains my solution to the DVLA Senior Software Development Engineer in Test coding assessment.
 
@@ -10,19 +10,25 @@ Node.js
 
 Running the application
 
-Clone the repository and run:
+## Clone the repository and run:
 
 npm install
 
-'node windowCleaning.js' or 'npm test' runs the code
+## Run the code
 
-Coding Exercise – Part 1 (GD&D Programming & Build - practitioner)
+node windowCleaning.js
+
+OR
+
+npm test
+
+## Coding Exercise – Part 1 (GD&D Programming & Build - practitioner)
 
 A window cleaner is setting up a computerised customer and booking system.
 
 They need to store data about their customers:
 
-Customers
+### Customers
 
 | Customer Number | Name   | Windows |
 | --------------- | ------ | ------- |
@@ -31,7 +37,7 @@ Customers
 | 3               | Ringo  | 12      |
 | 4               | George | 4       |
 
-Customer Bookings
+### Customer Bookings
 
 And the bookings that each customer would like to make.
 
@@ -56,15 +62,15 @@ You may use any reasonable general-purpose programming language to implement you
 
 Once you have expressed the data in your language implement the following two features.
 
-Feature 1 Calculate the total quantity of windows that will be cleaned on a specified date e.g. 2025-10-01
+#### Feature 1 Calculate the total quantity of windows that will be cleaned on a specified date e.g. 2025-10-01
 
-Feature 2
+#### Feature 2
 
 The window cleaner charges: £5 per property + £1 per window
 
 Calculate the total cost for a specified booking number.
 
-### Adding, Removing and Updating Data
+#### Adding, Removing and Updating Data
 
 | Action             | JavaScript Method                             | Example                      |
 | ------------------ | --------------------------------------------- | ---------------------------- |

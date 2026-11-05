@@ -1,7 +1,7 @@
 import { customerBookings } from "../testData/customerBookings.js";
 import { customers } from "../testData/customers.js";
 
-function findCustomersWithTargetDate(targetDate) {
+function findCustomersByTargetDate(targetDate) {
   //get array of all the customer booked in on target date
   const targetCustomers = customerBookings
     .filter((item) => item.date === targetDate)
@@ -10,14 +10,16 @@ function findCustomersWithTargetDate(targetDate) {
   return targetCustomers;
 }
 
-function findwindowCountwithCustomerNumber(targetCustomers) {
-  const windowCount = customers
-    .filter((item) => targetCustomers.includes(item.customerNumber))
-    .map((item) => item.windows);
+function findWindowCountByCustomerNumber(targetCustomers) {
+  const windowCount = targetCustomers.flatMap((customerNumber) =>
+    customers
+      .filter((item) => item.customerNumber === customerNumber)
+      .map((item) => item.windows),
+  );
   return windowCount;
 }
 
-function calculculateTotalWindows(windowCount) {
+function calculateTotalWindows(windowCount) {
   const totalWindowCount = windowCount.reduce((accumulator, current) => {
     return accumulator + current;
   }, 0);
@@ -25,7 +27,7 @@ function calculculateTotalWindows(windowCount) {
   return totalWindowCount;
 }
 
-function findCustomersWithTargetBookingNumber(targetBookingNumber) {
+function findCustomersByTargetBookingNumber(targetBookingNumber) {
   const targetCustomer = customerBookings.find(
     (customerBooking) => customerBooking.bookingNumber === targetBookingNumber,
   );
@@ -54,9 +56,9 @@ function findCustomerWindowCount(customerId) {
 }
 
 export {
-  findCustomersWithTargetDate,
-  findwindowCountwithCustomerNumber,
-  calculculateTotalWindows,
-  findCustomersWithTargetBookingNumber,
+  findCustomersByTargetDate,
+  findWindowCountByCustomerNumber,
+  calculateTotalWindows,
+  findCustomersByTargetBookingNumber,
   findCustomerWindowCount,
 };

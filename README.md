@@ -13,9 +13,8 @@ Running the application
 Clone the repository and run:
 
 npm install
-npm start
 
-'node windowCleaning.js' in terminal will run the code
+'node windowCleaning.js' or 'npm test' runs the code
 
 Coding Exercise – Part 1 (GD&D Programming & Build - practitioner)
 
